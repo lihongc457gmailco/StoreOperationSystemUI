@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../../fop assignment final version"
+		},
+		{
+			"name": "ProjectName",
+			"path": "../../../../../../../ProjectName"
+		}
+	],
+	"settings": {
+		"java.project.referencedLibraries": {
+			"include": [
+				"lib/**/*.jar"
+			],
+			"exclude": [
+				"lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar"
+			]
+		},
+		"maven.view": "flat"
+	}
+}
