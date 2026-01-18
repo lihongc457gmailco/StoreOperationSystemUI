@@ -3,17 +3,8 @@ package com.mycompany.storeoperationsystemgui;
 import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
-
-import jakarta.mail.Authenticator;
-import jakarta.mail.Message;
-import jakarta.mail.MessagingException;
-import jakarta.mail.Multipart;
-import jakarta.mail.PasswordAuthentication;
-import jakarta.mail.Transport;
-import jakarta.mail.internet.InternetAddress;
-import jakarta.mail.internet.MimeBodyPart;
-import jakarta.mail.internet.MimeMessage;
-import jakarta.mail.internet.MimeMultipart;
+import jakarta.mail.*;
+import jakarta.mail.internet.*;
 
 public class EmailService {
 
@@ -80,4 +71,5 @@ public class EmailService {
             e.printStackTrace();
         }
     }
+
 }
