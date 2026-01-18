@@ -1,9 +1,6 @@
 package com.mycompany.storeoperationsystemgui;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -128,4 +125,5 @@ public class StockIO {
         }
         return -1;
     }
+
 }
