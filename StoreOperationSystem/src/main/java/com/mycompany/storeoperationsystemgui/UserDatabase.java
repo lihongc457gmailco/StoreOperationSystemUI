@@ -1,10 +1,6 @@
 package com.mycompany.storeoperationsystemgui;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class UserDatabase {
@@ -129,4 +125,5 @@ public static boolean isUserExist(String username) {
         }
         return false; 
     }
+
 }
