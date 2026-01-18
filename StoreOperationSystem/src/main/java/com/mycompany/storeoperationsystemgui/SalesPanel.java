@@ -1,43 +1,14 @@
 package com.mycompany.storeoperationsystemgui;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.Font;
-import java.awt.GridLayout;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.time.Duration;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.awt.*;
+import java.io.*;
+import java.time.*;
+import java.time.format.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-
-import javax.swing.BorderFactory;
-import javax.swing.Box;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSpinner;
-import javax.swing.JTable;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.SpinnerNumberModel;
-import javax.swing.SwingConstants;
-import javax.swing.table.DefaultTableModel;
+import java.util.concurrent.*;
+import javax.swing.*;
+import javax.swing.table.*;
 
 public class SalesPanel extends JPanel {
 
@@ -360,7 +331,7 @@ public class SalesPanel extends JPanel {
                 double price = (Double) cartModel.getValueAt(i, 1);
                 double total = (Double) cartModel.getValueAt(i, 3);
                 
-                String line = String.format("%s,%s,%s,%s,%s,%s,%s,%d,%.0f,%.0f",
+                String line = String.format("%s,%s,%s,%s,%s,%s,%s,%d,%.2f,%.2f",
                         dateStr, timeStr, outlet, salesPerson, customer, payment, model, qty, price, total);
                 
                 writer.write(line);
@@ -440,4 +411,5 @@ public class SalesPanel extends JPanel {
         writer.println("=========================================");
         writer.println(); 
     }
+
 }
