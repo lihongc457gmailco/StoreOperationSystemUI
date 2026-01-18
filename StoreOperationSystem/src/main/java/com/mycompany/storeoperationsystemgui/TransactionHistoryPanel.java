@@ -1,18 +1,15 @@
 package com.mycompany.storeoperationsystemgui;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableRowSorter;
+import javax.swing.table.*;
 import java.awt.*;
 import java.io.*;
-import java.time.LocalDate;
-import java.time.Year;
-import java.time.YearMonth;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.List;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
+import java.util.regex.*;
+import java.util.stream.*;
 
 public class TransactionHistoryPanel extends JPanel {
 
@@ -473,4 +470,5 @@ public class TransactionHistoryPanel extends JPanel {
             JOptionPane.showMessageDialog(this, "Saved!");
         } catch (IOException e) { JOptionPane.showMessageDialog(this, "Error saving."); }
     }
+
 }
