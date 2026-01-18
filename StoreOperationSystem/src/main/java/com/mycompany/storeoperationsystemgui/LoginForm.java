@@ -1,20 +1,7 @@
 package com.mycompany.storeoperationsystemgui;
 
-import java.awt.BorderLayout;
-import java.awt.Font;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
-
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-import javax.swing.SwingUtilities;
+import java.awt.*;
+import javax.swing.*;
 
 public class LoginForm extends JFrame {
 
@@ -119,4 +106,5 @@ public class LoginForm extends JFrame {
             new LoginForm().setVisible(true);
         });
     }
+
 }
